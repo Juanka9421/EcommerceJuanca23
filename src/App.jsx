@@ -1,16 +1,21 @@
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import { useState } from "react";
+import { Navbar } from "./components/layout/navbar/Navbar";
+import Home from "./components/pages/Home/Home";
+import Cart from "./components/pages/cart/Cart";
+import ItemListContainer from "./components/pages/cart/itemList/ItemListContainer";
 
 function App() {
-  const funcionSaludar = () => {
-    console.log("Hello Kitty");
+  const [saludo, setSaludo] = useState("Hello How are you????");
+  const cambiarSaludo = (greeting) => {
+    setSaludo(greeting);
   };
+  //props
   return (
     <div>
       <Navbar />
-      <h1>HOLA A TODOS</h1>
-      <button onClick={funcionSaludar}>Saludito</button>
-      <Footer />
+      <Home />
+      <Cart />
+      <ItemListContainer saludo={saludo} cambiarSaludo={cambiarSaludo} />
     </div>
   );
 }
