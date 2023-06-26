@@ -15,6 +15,7 @@ function App() {
       <Navbar />
       <Home />
       <Cart />
+
       <ItemListContainer saludo={saludo} cambiarSaludo={cambiarSaludo} />
     </div>
   );
