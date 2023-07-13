@@ -1,3 +1,5 @@
+import CounterContainer from "../../common/counter/CounterContainer";
+
 const ItemList = ({ saludo, cambiarSaludo }) => {
   return (
     <div>
@@ -5,6 +7,7 @@ const ItemList = ({ saludo, cambiarSaludo }) => {
       <button onClick={() => cambiarSaludo("Hola como estas?")}>
         Greeting
       </button>
+      <CounterContainer />
     </div>
   );
 };
