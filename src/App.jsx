@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Navbar } from "./components/layout/navbar/Navbar";
 import Home from "./components/pages/Home/Home";
 import Cart from "./components/pages/cart/Cart";
-import ItemListContainer from "./components/pages/ItemList/ItemListContainer";
+import ItemListContainer from "./components/pages/itemList/ItemListContainer";
 import CounterContainer from "./components/common/counter/CounterContainer";
 import ItemDetail from "./components/home/itemDetail/ItemDetail";
 
